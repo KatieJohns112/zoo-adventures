@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
-import { authApi, userStorageKey } from "./authSettings"
+import { userStorageKey } from "./authSettings"
 import "./Login.css"
 
 export const Register = () => {
@@ -18,7 +18,7 @@ export const Register = () => {
 
     const existingUserCheck = () => {
         
-        return fetch(`${authApi.localApiBaseUrl}/${authApi.endpoint}?email=${registerUser.email}`)
+        return fetch(`http://localhost:8088/users?email=${registerUser.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
@@ -29,7 +29,7 @@ export const Register = () => {
         existingUserCheck()
             .then((userExists) => {
                 if (!userExists) {
-                    fetch(`${authApi.localApiBaseUrl}/${authApi.endpoint}`, {
+                    fetch(`http://localhost:8088/users`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
@@ -63,7 +63,7 @@ export const Register = () => {
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Please Register for Zoo Adventure</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
                     <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
@@ -77,7 +77,7 @@ export const Register = () => {
                     <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Sign in </button>
+                    <button type="submit"> Create account </button>
                 </fieldset>
             </form>
         </main>

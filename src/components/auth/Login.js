@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link, useHistory } from "react-router-dom";
-import { authApi, userStorageKey } from "./authSettings"
 import "./Login.css"
 
 
@@ -9,7 +8,7 @@ export const Login = () => {
     const [existDialog, setExistDialog] = useState(false)
 
     const history = useHistory()
-
+// handleInputChange changes the state of the code each time a user types in the input box
     const handleInputChange = (event) => {
         const newUser = { ...loginUser }
         newUser[event.target.id] = event.target.value
@@ -18,7 +17,7 @@ export const Login = () => {
 
 
     const existingUserCheck = () => {
-        return fetch(`${authApi.localApiBaseUrl}/${authApi.endpoint}?email=${loginUser.email}`)
+        return fetch(`http://localhost:8088/users?email=${loginUser.email}`)
             .then(res => res.json())
             .then(user => user.length ? user[0] : false)
     }
@@ -29,7 +28,7 @@ export const Login = () => {
         existingUserCheck()
             .then(exists => {
                 if (exists) {
-                    sessionStorage.setItem(userStorageKey, exists.id)
+                    sessionStorage.setItem("app_user_id", exists.id)
                     history.push("/")
                 } else {
                     setExistDialog(true)
@@ -45,7 +44,7 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Nutshell</h1>
+                    <h1>Zoo Adventure</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
