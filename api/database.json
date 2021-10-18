@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Katie",
+      "email": "Kjohns@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Ryan",
+      "email": "Rjohns@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Erica",
+      "email": "Ewarner@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Colton",
+      "email": "Cwarner@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Amber",
+      "email": "Awarner@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Amanda",
+      "email": "Awarner@gmail.com"
+    },
+    {
+      "email": "Jjohns@gmail.com",
+      "name": "Joshua Johns",
+      "id": 7
+    }
+  ]
+}
