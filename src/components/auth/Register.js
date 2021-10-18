@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { userStorageKey } from "./authSettings"
 import "./Login.css"
-import logo from "../../images/giraffe.png"
+
 
 export const Register = () => {
 

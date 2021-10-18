@@ -2,7 +2,10 @@ import React from "react"
 import { Route, Redirect } from "react-router-dom"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
+import { NavBar } from "./nav/NavBar"
+import { ApplicationViews } from "./ApplicationViews"
 import "./ZooAdventure.css"
+
 
 export const ZooAdventure = () => (
     <>
@@ -11,7 +14,9 @@ export const ZooAdventure = () => (
           if (sessionStorage.getItem("app_user_id")) {
             return (
               <>
-            
+               <h1>Zoo Adventures</h1>
+                  <NavBar />
+                  <ApplicationViews />
               </>
             )
           } else {

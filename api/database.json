@@ -35,5 +35,25 @@
       "name": "Joshua Johns",
       "id": 7
     }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Giraffe",
+      "knowledge": "How tall does a giraffe get?",
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Monkey",
+      "knowledge": "How tall can a monkey climb a tree?",
+      "locationId": 1
+    },
+    {
+      "id": 1,
+      "name": "Stingray",
+      "knowledge": "How fast cana stingray swim?",
+      "locationId": 1
+    }
   ]
 }
