@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css"
+import logo from "../../images/ZooAdventuresLOGO.png.png"
 
 
 export const Login = () => {
@@ -44,10 +45,11 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Zoo Adventure</h1>
+                 <img className="logo" src={logo}></img>
+                  <h1>Zoo Adventures</h1>
                     <h2>Please sign in</h2>
-                    <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
+                    <fieldset className="login_fieldset">
+                        <label className="email_input" htmlFor="inputEmail"> Email address </label>
                         <input type="email"
                             id="email"
                             className="form-control"
@@ -56,15 +58,15 @@ export const Login = () => {
                             value={loginUser.email}
                             onChange={handleInputChange} />
                     </fieldset>
-                    <fieldset>
+                    <fieldset className="login_fieldset">
                         <button type="submit">
                             Sign in
                         </button>
                     </fieldset>
                 </form>
             </section>
-            <section className="link--register">
-                <Link to="/register">Register for an account</Link>
+            <section className="register_link">
+                <Link className="register-link" to="/register">Register for an account</Link>
             </section>
         </main>
     )
