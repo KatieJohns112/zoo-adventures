@@ -45,7 +45,7 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                 <img className="logo" src={logo}></img>
+                 <img className="logo" src={logo} alt="logo"></img>
                   <h1 className="zoo-adventures">Zoo Adventures</h1>
                     <h2>Please sign in</h2>
                     <fieldset className="login_fieldset">

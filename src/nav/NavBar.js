@@ -21,6 +21,9 @@ export const NavBar = ( props ) => {
                 <li className="nav_item">
                     < Link className="nav_link" to="/reviews">Reviews</Link>
                 </li>
+                <li className="nav_item">
+                    < Link className="nav_link" to="/logout">Logout</Link>
+                </li>
             </ul>
         </nav>
     )
