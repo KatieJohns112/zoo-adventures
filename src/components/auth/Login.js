@@ -46,7 +46,7 @@ export const Login = () => {
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
                  <img className="logo" src={logo}></img>
-                  <h1>Zoo Adventures</h1>
+                  <h1 className="zoo-adventures">Zoo Adventures</h1>
                     <h2>Please sign in</h2>
                     <fieldset className="login_fieldset">
                         <label className="email_input" htmlFor="inputEmail"> Email address </label>
@@ -59,7 +59,7 @@ export const Login = () => {
                             onChange={handleInputChange} />
                     </fieldset>
                     <fieldset className="login_fieldset">
-                        <button type="submit">
+                        <button className="sign_in" type="submit">
                             Sign in
                         </button>
                     </fieldset>

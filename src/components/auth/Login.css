@@ -7,6 +7,13 @@ h1 {
     color:tan;
 }
 
+.zoo-adventures {
+    border-style: solid;
+    border-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 h2 {
     font-family: Architects Daughter, sans-serif;
     font-size: 1cm;
@@ -25,6 +32,8 @@ h2 {
     text-align: center;
     font-family:  Architects Daughter, sans-serif;
     color: white;
+   font-weight: 700;
+    margin-top: 2%;
 }
 
 .register-link {
@@ -47,6 +56,54 @@ color: tan;
     margin-bottom: -10%
 }
 
-.container--login {
-    background-color: black;;
+.sign_in {
+    background-color: grey;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Architects Daughter, sans-serif;
 }
+
+.please_register {
+    font-size: 1.2cm;
+    font-family: Architects Daughter, sans-serif;
+    border-style: solid;
+    border-left-color: white;
+    border-right-color: tan;
+    border-top-color: grey;
+    border-bottom-color: rgb(141, 105, 57);
+    border-width: .3cm;
+}
+
+.first_name {
+    color: white;
+    font-family: Architects Daughter, sans-serif;
+
+}
+
+.last_name {
+    color: white;
+    font-family: Architects Daughter, sans-serif;
+}
+
+.email_address {
+    color: white;
+    font-family: Architects Daughter, sans-serif;
+}
+
+.form_register {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.create_account {
+    background-color: grey;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Architects Daughter, sans-serif;
+    font-size: .4cm;
+}
+
