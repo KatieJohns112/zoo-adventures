@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { userStorageKey } from "./authSettings"
 import "./Login.css"
+import logo from "../../images/giraffe.png"
 
 export const Register = () => {
 
@@ -62,22 +63,22 @@ export const Register = () => {
                 <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
 
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Zoo Adventure</h1>
+            <form className="form_register" onSubmit={handleRegister}>
+                <h1 className="please_register">Please Register for Zoo Adventures</h1>
                 <fieldset>
-                    <label htmlFor="firstName"> First Name </label>
+                    <label className="first_name" htmlFor="firstName"> First Name </label>
                     <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="lastName"> Last Name </label>
+                    <label className="last_name" htmlFor="lastName"> Last Name </label>
                     <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="inputEmail"> Email address </label>
+                    <label className="email_address" htmlFor="inputEmail"> Email address </label>
                     <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Create account </button>
+                    <button className ="create_account" type="submit"> Create account </button>
                 </fieldset>
             </form>
         </main>

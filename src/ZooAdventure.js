@@ -2,6 +2,7 @@ import React from "react"
 import { Route, Redirect } from "react-router-dom"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
+import "./ZooAdventure.css"
 
 export const ZooAdventure = () => (
     <>
