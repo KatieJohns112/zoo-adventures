@@ -1,8 +1,8 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
-import { AnimalCard } from "./components/Animals/AnimalCard"
 import { AnimalList } from "./components/Animals/AnimalList"
+import { AnimalForm } from "./components/Animals/AnimalForm"
 
 export const ApplicationViews = () => {
     return (
@@ -11,8 +11,13 @@ export const ApplicationViews = () => {
             <Route exact path="/">
                 <Home />
             </Route>
-            <Route path="/animals">
+
+            <Route exact path="/animals">
               <AnimalList />
+            </Route>
+
+            <Route path="/animals/create">
+              <AnimalForm />
             </Route>
         </>
     )
