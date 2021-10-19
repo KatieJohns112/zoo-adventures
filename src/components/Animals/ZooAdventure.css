@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+    background-color: black;
+    font-family: Architects Daughter, sans-serif;
+}
+
+.logo_navbar {
+    max-height: 3cm;
+    max-width: 3cm;
+    margin-left: 18%;
+    margin-bottom: -8%;
+
+}
+
+.main_zoo {
+   border-style: solid;
+   border-color: grey;
+   margin-left: 10%;
+   margin-right: 10%;
+}
