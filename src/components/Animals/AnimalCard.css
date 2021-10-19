@@ -1,9 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 h3 {
-    color: white;
+    color: rgb(43, 41, 41);
     font-size: .7cm;
+    text-align: center;
 }
 
 p {
-    color: tan;
+    color:black;
+    margin-left: 3%;
 }
-  
+
+.animal_cards {
+    width: 300px;
+    height: 450px;
+    background-color: tan;
+    display:  flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-top: 5%;
+    
+    border-color: white;
+    border-style: solid;
+
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+}
+
+div.container-cards {
+    display:  flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.picture {
+    max-width: 300px;
+    max-height: 168px;
+}
+
+.remove_button {
+    margin-left: 3%;
+    background-color: lightgrey;
+    font-family: Architects Daughter, sans-serif;
+    border-color: black;
+}
+
+.edit_button {
+    margin-left:3%;
+    background-color: lightgrey;
+    font-family: Architects Daughter, sans-serif;
+    border-style: solid;
+    border-color: black;
+}
+
