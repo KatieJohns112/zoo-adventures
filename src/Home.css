@@ -1,0 +1,20 @@
+.home_header {
+    text-align: left;
+    font-size: .7cm;
+    margin-right: 50%;
+    margin-top: 5%;
+    margin-left: 4%;
+    border-style: solid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-left-color: black;
+    border-right-color: black;
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+.logo-logo {
+    margin-left: 52%;
+    margin-top: -25%
+
+}
