@@ -1,1 +1,50 @@
-.placeholder {}
+.name_fieldset {
+    text-align: center;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan;
+}
+
+.knowledge_fieldset {
+    text-align: center;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan;
+}
+
+.zoo_fieldset {
+    text-align: center;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan;
+}
+
+.animal_form_title {
+    color: tan;
+    font-size: 1cm;
+}
+
+.animal_form_title {
+    font-size: 1.2cm;
+    font-family: Architects Daughter, sans-serif;
+    border-style: solid;
+    border-left-color: white;
+    border-right-color: tan;
+    border-top-color: grey;
+    border-bottom-color: rgb(141, 105, 57);
+    border-width: .3cm;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.save_animal_button {
+    background-color: grey;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: Architects Daughter, sans-serif;
+    font-size: .4cm;
+    margin-left: 45%;
+    margin-top: 2%;
+}

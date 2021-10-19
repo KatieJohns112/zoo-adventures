@@ -10,9 +10,9 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
             <div className="animal_cards">
                 <div className="header">Zoo adventures animal</div>
                 <div className="animal_card_content">
-                <picture>
+                {/* <picture>
                  <img src={require(`../../images/${animal.image}`).default} alt="Dog"/>
-                </picture>
+                </picture> */}
                     <h3>{animal.name}</h3>
                     <p>What I want to know: {animal.knowledge}</p>
                     <p>Located at: {animal.locationId}</p>

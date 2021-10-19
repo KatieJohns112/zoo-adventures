@@ -40,35 +40,35 @@
     {
       "id": 1,
       "name": "Monkey",
-      "image": "elephant.jpeg" ,
+      "image": "elephant.jpeg",
       "knowledge": "How fast can a monkey climb a tree?",
       "locationId": 1
     },
     {
       "id": 2,
       "name": "Stingray",
-      "image": "elephant.jpeg" ,
+      "image": "elephant.jpeg",
       "knowledge": "How fast can a stingray swim?",
       "locationId": 1
     },
     {
       "id": 3,
       "name": "Elephant",
-      "image":"elephant.jpeg" ,
+      "image": "elephant.jpeg",
       "knowledge": "How fast can a stingray swim?",
       "locationId": 1
     },
     {
       "id": 4,
       "name": "Snake",
-      "image":"elephant.jpeg" ,
+      "image": "elephant.jpeg",
       "knowledge": "How fast can a stingray swim?",
       "locationId": 1
     },
     {
       "id": 5,
       "name": "Flamingo",
-      "image": "elephant.jpeg" ,
+      "image": "elephant.jpeg",
       "knowledge": "How fast can a stingray swim?",
       "locationId": 1
     }

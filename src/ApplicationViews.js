@@ -12,12 +12,12 @@ export const ApplicationViews = () => {
                 <Home />
             </Route>
 
-            <Route exact path="/animals">
-              <AnimalList />
-            </Route>
-
             <Route path="/animals/create">
               <AnimalForm />
+            </Route>
+
+            <Route exact path="/animals">
+              <AnimalList />
             </Route>
         </>
     )
