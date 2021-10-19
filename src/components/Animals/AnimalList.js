@@ -26,6 +26,7 @@ export const AnimalList = () => {
 
   // got the animals from the API on the component's first render
   useEffect(() => {
+      console.log("useEffect running")
     getAnimals();
   }, []);
 
