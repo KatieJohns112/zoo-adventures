@@ -72,5 +72,35 @@
       "knowledge": "How fast can a stingray swim?",
       "locationId": 1
     }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville Zoo",
+      "address": "8422 Johnson Pike",
+      "hours": "9 a.m to 5 p.m.",
+      "price": "$$$"
+    },
+    {
+      "id": 2,
+      "name": "Memphis Zoo",
+      "address": "8422 Johnson Pike",
+      "hours": "9 a.m to 5 p.m.",
+      "price": "$$$"
+    },
+    {
+      "id": 3,
+      "name": "Knoxville Zoo",
+      "address": "8422 Johnson Pike",
+      "hours": "9 a.m to 5 p.m.",
+      "price": "$$$"
+    },
+    {
+      "id": 4,
+      "name": "Chattanooga Zoo",
+      "address": "8422 Johnson Pike",
+      "hours": "9 a.m to 5 p.m.",
+      "price": "$$$"
+    }
   ]
 }
