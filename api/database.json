@@ -38,21 +38,15 @@
   ],
   "animals": [
     {
-      "id": 1,
-      "name": "Giraffe",
-      "knowledge": "How tall does a giraffe get?",
-      "locationId": 1
-    },
-    {
       "id": 2,
       "name": "Monkey",
-      "knowledge": "How tall can a monkey climb a tree?",
+      "knowledge": "How fast can a monkey climb a tree?",
       "locationId": 1
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "Stingray",
-      "knowledge": "How fast cana stingray swim?",
+      "knowledge": "How fast can a stingray swim?",
       "locationId": 1
     }
   ]
