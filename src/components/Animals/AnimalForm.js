@@ -7,7 +7,7 @@ import "./AnimalForm.css"
 export const AnimalForm = () => {
     const [animal, setAnimal] = useState({
         name: "",
-        image:"",
+        image:"elephant.jpeg",
         knowledge:"",
         locationId: 0
     });
@@ -33,6 +33,7 @@ export const AnimalForm = () => {
         }
     )}, []);
     const handleClickSaveAnimal = (event) => {
+        event.preventDefault();
         const locationId = animal.locationId
 
         if (locationId === 0 ) {

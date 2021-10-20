@@ -36,7 +36,7 @@ export const AnimalList = () => {
     {/* //add this button above your display of animal cards */}
   <section className="section-content">
     <button type="button"
-      className="btn"
+      className="new-animal-button"
       onClick={() => {history.push("/animals/create")}}>
       Create new Animal Card
     </button>
