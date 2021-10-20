@@ -3,7 +3,7 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { AnimalList } from "./components/Animals/AnimalList"
 import { AnimalForm } from "./components/Animals/AnimalForm"
-import { LocationList } from "./components/Locations/LocationList"
+import { LocationList } from "./components/Locations/LocationLIst"
 
 export const ApplicationViews = () => {
     return (

@@ -7,13 +7,13 @@ export const LocationCard = ({ location, handleDeleteLocation }) => {
         <>
       <div className="card_location">
         <div className="card_content_location">
-          <h3>Name: <span className="card-locationname">
+          <h3><span className="card-locationname">
             {location.name}
           </span></h3>
           <p>Address: {location.address}</p>
           <p>Operation Hours: {location.hours}</p>
           <p>Price Range: {location.price}</p>
-          <button type="button" onClick={() => handleDeleteLocation(location.id)}>Close</button>
+          <button type="button" onClick={() => handleDeleteLocation(location.id)}>Remove from my list</button>
         </div>
       </div>
       </>

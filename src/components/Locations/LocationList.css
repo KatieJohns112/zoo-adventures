@@ -1,0 +1,22 @@
+.location_header {
+    font-size: .9cm;
+    text-align: left;
+    margin-right: 50%;
+    margin-left: 2%;
+    border: solid white;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: black;
+    border-right-color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.nashville_map {
+    max-width: 650px;
+    max-height: 450px;
+    margin-left: 55%;
+    margin-top: -30%;
+    margin-bottom: 4%;
+    
+}
