@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import { addAnimal } from "./AnimalManager";
 import { getAllLocations } from "../Locations/LocationManager";
+import { getAllImages } from "../../ImageManager";
 import "./AnimalForm.css"
 
 export const AnimalForm = () => {
     const [animal, setAnimal] = useState({
         name: "",
-        image:"elephant.jpeg",
+        image:"",
         knowledge:"",
         locationId: 0
     });
@@ -15,6 +16,7 @@ export const AnimalForm = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const [locations, setLocations] = useState([]);
+    const [images, setImages] = useState([]);
 
     const history = useHistory();
 
@@ -32,12 +34,20 @@ export const AnimalForm = () => {
             setLocations(location);
         }
     )}, []);
+    useEffect(() => {
+        getAllImages().then((image) => {
+        setImages(image);
+        }
+    )}, []);
+
     const handleClickSaveAnimal = (event) => {
         event.preventDefault();
-        const locationId = animal.locationId
 
-        if (locationId === 0 ) {
-            window.alert("please select a location")
+        const locationId = animal.locationId
+        const imageId = animal.image
+
+        if (locationId === 0 || imageId === 0) {
+            window.alert("please select a location and an image")
         } else {
             addAnimal(animal)
             .then(() => history.push("/animals/"))
@@ -65,6 +75,19 @@ export const AnimalForm = () => {
 						<option value="0">Select a location</option>
 						{locations.map(l => (
 							<option key={l.id} value={l.id}>
+								{l.name}
+							</option>
+						))}
+					</select>
+				</div>
+			</fieldset>
+            <fieldset className="image_fieldset">
+				<div className="form-group">
+					<label htmlFor="image">image</label>
+					<select value={animal.image} name="address" id="image" onChange={handleControlledInputChange} className="form-control" >
+						<option value="0">Select an image</option>
+						{images.map(l => (
+							<option key={l.id} value={l.address}>
 								{l.name}
 							</option>
 						))}

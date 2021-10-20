@@ -102,5 +102,17 @@
       "hours": "9 a.m to 5 p.m.",
       "price": "$$$"
     }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "name": "elephant",
+      "address": "elephant.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "giraffe",
+      "address": "giraffe.png"
+    }
   ]
 }
