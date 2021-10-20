@@ -13,17 +13,21 @@ p {
 
 .animal_cards {
     width: 300px;
-    height: 450px;
+    height: 500px;
     background-color: tan;
     display:  flex;
     flex-flow: row wrap;
     justify-content: space-around;
     border-radius: 20px;
     margin-top: 5%;
-    
     border-color: white;
     border-style: solid;
 
+}
+
+.animal__image {
+    max-height: 450px;
+    max-width: 450px;
 }
 
 .header {
