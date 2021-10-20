@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css"
-
+import logo from "../../images/ZooAdventuresLOGO.png.png"
 
 
 export const Login = () => {
@@ -45,7 +45,7 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                 <img className="logo" src="../../../public/images/ZooAdventuresLOGO.png.png" alt="logo"></img>
+                 <img className="logo" src={logo} alt="logo"></img>
                   <h1 className="zoo-adventures">Zoo Adventures</h1>
                     <h2>Please sign in</h2>
                     <fieldset className="login_fieldset">
