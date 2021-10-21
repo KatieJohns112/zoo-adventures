@@ -1,15 +1,19 @@
 
 import React, { useState, useEffect } from "react"
-import "./AnimalForm.css"
 import { useParams, useHistory } from "react-router-dom"
 import { getAnimalById } from "./AnimalManager"
 import { update } from "./AnimalManager"
 import "./AnimalEditForm.css"
+import { getAllImages } from "../../ImageManager"
+import { getAllLocations } from "../Locations/LocationManager"
 
 
 export const AnimalEditForm = () => {
   const [animal, setAnimal] = useState({ name: "", image: "", knowledge:"", locationId:1 });
   const [isLoading, setIsLoading] = useState(false);
+  const [image, setImages] = useState([]);
+  const [location, setLocation] = useState([]);
+//   setImage is setting the new state
 
   const {animalId} = useParams();
   const history = useHistory();
@@ -28,8 +32,8 @@ export const AnimalEditForm = () => {
     const editedAnimal = {
       id: animalId,
       name: animal.name,
-      breed: animal.image,
-      image: animal.knowledge,
+      image: animal.image,
+      knowledge: animal.knowledge,
       locationId: 1
     };
 console.log(editedAnimal)
@@ -44,6 +48,14 @@ console.log(editedAnimal)
         setAnimal(animal);
         setIsLoading(false);
       });
+      
+      getAllImages().then(picture => {
+          setImages(picture);
+      });
+      
+      getAllLocations().then(place => {
+          setLocation(place);
+      })
   }, []);
   
   return (
@@ -62,15 +74,16 @@ console.log(editedAnimal)
             />
             <label className="animal-name"htmlFor="name">Animal name</label>
 
-            <input
-              type="text"
-              required
-              className="form-control"
-              onChange={handleFieldChange}
-              id="image"
-              value={animal.image}
-            />
             <label className="animal-image"htmlFor="image">image</label>
+            <select value={animal.image} name="address" id="image" onChange={handleFieldChange} className="form-control" >
+						<option value="0">Select an image  </option>
+                        {/* array of images */}
+						{image.map(l => (
+							<option key={l.id} value={l.address}>
+								{l.name}
+							</option>
+						))}
+					</select>
 
             <input
               type="text"
@@ -82,15 +95,15 @@ console.log(editedAnimal)
             />
             <label className="animal-knowledge"htmlFor="knowledge">Desired knowledge</label>
 
-            <input
-              type="text"
-              required
-              className="form-control"
-              onChange={handleFieldChange}
-              id="locationId"
-              value={animal.locationId}
-            />
             <label className="animal-location"htmlFor="breed">Location ID</label>
+            <select value={animal.locationId} name="locationId" id="locationId" onChange={handleFieldChange} className="form-control" >
+						<option value="0">Select a location</option>
+						{location.map(l => (
+							<option key={l.id} value={l.id}>
+								{l.name}
+							</option>
+						))}
+					</select>
           </div>
           <div className="alignRight">
             <button
