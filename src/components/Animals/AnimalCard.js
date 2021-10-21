@@ -15,7 +15,7 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
                 </picture>
                     <h3>{animal.name}</h3>
                     <p>What I want to know: {animal.knowledge}</p>
-                    <p>Located at: {animal.locationId}</p>
+                    <p>Located at: {animal.location.name}</p>
                     <button className="remove_button" type="button" onClick={() => handleDeleteAnimal(animal.id)}>Remove</button>
                     <button className="edit_button" type="button" onClick={() => history.push(`/animals/${animal.id}/edit`)}>Edit</button>
                     </div>

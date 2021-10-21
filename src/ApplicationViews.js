@@ -2,8 +2,9 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { AnimalList } from "./components/Animals/AnimalList"
-import { AnimalForm } from "./components/Animals/AnimalForm"
 import { LocationList } from "./components/Locations/LocationLIst"
+import { AnimalForm } from "./components/Animals/AnimalForm"
+import { AnimalEditForm } from "./components/Animals/AnimalEditForm"
 
 export const ApplicationViews = () => {
     return (
@@ -19,6 +20,10 @@ export const ApplicationViews = () => {
 
             <Route exact path="/animals">
               <AnimalList />
+            </Route>
+
+            <Route path="/animals/:animalId(\d+)/edit">
+              <AnimalEditForm /> 
             </Route>
 
             <Route path="/locations">

@@ -6,7 +6,7 @@ export const getAnimalById = (animalId) => {
   }
   
   export const getAllAnimals = () => {
-    return fetch(`${remoteURL}/animals`)
+    return fetch(`${remoteURL}/animals?_expand=location`)
     .then(res => res.json())
   }
 
@@ -24,4 +24,14 @@ export const getAnimalById = (animalId) => {
         },
         body: JSON.stringify(newAnimal)
     }).then(response => response.json())
+  }
+
+  export const update = (editedAnimal) => {
+    return fetch(`${remoteURL}/animals/${editedAnimal.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedAnimal)
+    }).then(data => data.json());
   }

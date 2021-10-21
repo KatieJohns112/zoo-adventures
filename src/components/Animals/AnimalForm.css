@@ -47,4 +47,13 @@
     font-size: .4cm;
     margin-left: 45%;
     margin-top: 2%;
+    border-style: solid;
+    border-color: white;
+}
+
+.image_fieldset {
+    text-align: center;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan; 
 }
