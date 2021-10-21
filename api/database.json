@@ -45,18 +45,60 @@
       "locationId": 1
     },
     {
-      "id": 5,
-      "name": "Flamingo",
-      "image": "elephant.jpeg",
-      "knowledge": "How fast can a stingray swim?",
-      "locationId": 1
+      "id": 2,
+      "name": "Rhino",
+      "image": "rhino.jpeg",
+      "knowledge": "How big do Rhinos get?",
+      "locationId": 3
     },
     {
-      "name": "",
-      "image": "elephant.jpeg",
-      "knowledge": "",
-      "locationId": 3,
-      "id": 6
+      "id": 3,
+      "name": "elephant",
+      "image": "elephant2.jpeg",
+      "knowledge": "How long do elephants live",
+      "locationId": 4
+    },
+    {
+      "id": 4,
+      "name": "zebra",
+      "image": "zebra.jpeg",
+      "knowledge": "How long do zebras live",
+      "locationId": 4
+    },
+    {
+      "id": 4,
+      "name": "giraffe",
+      "image": "giraffeimage.jpeg",
+      "knowledge": "How long do giraffes live",
+      "locationId": 2
+    },
+    {
+      "id": 5,
+      "name": "cheetah",
+      "image": "cheetah.jpeg",
+      "knowledge": "How long do cheetahs live",
+      "locationId": 2
+    },
+    {
+      "id": 6,
+      "name": "lion",
+      "image": "lion.jpeg",
+      "knowledge": "How long do lions live",
+      "locationId": 2
+    },
+    {
+      "id": 7,
+      "name": "shark",
+      "image": "dottedshark.jpeg",
+      "knowledge": "How long do sharks live",
+      "locationId": 3
+    },
+    {
+      "id": 8,
+      "name": "clown fish",
+      "image": "nemo.jpeg",
+      "knowledge": "How long do fish live",
+      "locationId": 3
     }
   ],
   "locations": [
@@ -97,8 +139,9 @@
     },
     {
       "id": 2,
-      "name": "giraffe",
-      "address": "giraffe.png"
+      "name":"rhino",
+      "address": "rhino.jpeg"
     }
+   
   ]
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 .navbar_items {
     display: flex;
     flex-wrap: nowrap;
@@ -8,3 +10,13 @@
     color: white;
     font-size: .7cm;    
 }
+
+.nav__button {
+    font-family: Architects Daughter, sans-serif;
+    background-color: black;
+    color: grey;
+    border-style: solid;
+    border-color: black;
+    font-size: .7cm;
+}
+
