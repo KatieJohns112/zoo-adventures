@@ -42,126 +42,88 @@
       "image": "elephant.jpeg",
       "knowledge": "info",
       "locationId": 1,
-      "id": 1
+      "id": 1,
+      "userId": 1
     },
     {
       "name": "Rhino",
       "image": "rhino.jpeg",
       "knowledge": "info",
       "locationId": 2,
-      "id": 2
+      "id": 2,
+      "userId": 2
     },
     {
-      "name": "Alligator",
-      "image": "alligator.jpeg",
+      "name": "sally",
+      "userId": 1,
+      "image": "giraffeimage.jpeg",
       "knowledge": "info",
-      "locationId": 3,
+      "locationId": 2,
       "id": 3
     },
     {
-      "name": "Anaconda",
-      "image": "anaconda.jpeg",
+      "name": "Rhino",
+      "userId": 1,
+      "image": "rhino.jpeg",
       "knowledge": "info",
-      "locationId": 4,
+      "locationId": 3,
       "id": 4
     },
     {
-      "id": 5,
-      "name": "Cheetah",
-      "image": "cheetah.jpeg",
-      "knowledge": "info",
-      "locationId": 1
-    },
-    {
-      "name": "Shark",
-      "image": "dottedshark.jpeg",
-      "knowledge": "info",
-      "locationId": 2,
-      "id": 6
-    },
-    {
       "name": "Flamingo",
+      "userId": 1,
       "image": "flamingo.jpeg",
       "knowledge": "info",
       "locationId": 3,
+      "id": 5
+    },
+    {
+      "name": "Meerkat",
+      "userId": 1,
+      "image": "meerkat.jpeg",
+      "knowledge": "info",
+      "locationId": 3,
+      "id": 6
+    },
+    {
+      "name": "Penguin",
+      "userId": 1,
+      "image": "penguin.jpeg",
+      "knowledge": "info",
+      "locationId": 4,
       "id": 7
     },
     {
-      "name": "Giraffe",
-      "image": "giraffeimage.jpeg",
+      "name": "Kangaroo",
+      "userId": 1,
+      "image": "kangaroo.jpeg",
       "knowledge": "info",
       "locationId": 4,
       "id": 8
     },
     {
-      "name": "Hippopotamus",
-      "image": "hippo.jpeg",
+      "name": "Stingray",
+      "userId": 1,
+      "image": "stingray.jpeg",
       "knowledge": "info",
-      "locationId": 1,
+      "locationId": 4,
       "id": 9
     },
     {
-      "name": "Kangaroo",
-      "image": "kangaroo.jpeg",
+      "name": "Lion",
+      "userId": 1,
+      "image": "lion.jpeg",
       "knowledge": "info",
-      "locationId": 2,
+      "locationId": 3,
       "id": 10
     },
     {
-      "name": "Lion",
-      "image": "lion.jpeg",
-      "knowledge": "info",
-      "locationId": 2,
-      "id": 11
-    },
-    {
-      "name": "Meerkat",
-      "image": "meerkat.jpeg",
-      "knowledge": "info",
-      "locationId": 2,
-      "id": 12
-    },
-    {
       "name": "Monkey",
+      "userId": 1,
       "image": "monkey.jpeg",
       "knowledge": "info",
       "locationId": 4,
-      "id": 13
-    },
-    {
-      "name": "Clown Fish",
-      "image": "nemo.jpeg",
-      "knowledge": "info",
-      "locationId": 2,
-      "id": 14
-    },
-    {
-      "name": "Parrot",
-      "image": "parrot.jpeg",
-      "knowledge": "info",
-      "locationId": 3,
-      "id": 15
-    },
-    {
-      "name": "Penguin",
-      "image": "penguin.jpeg",
-      "knowledge": "info",
-      "locationId": 3,
-      "id": 16
-    },
-    {
-      "name": "Sloth",
-      "image": "sloth.jpeg",
-      "knowledge": "info",
-      "locationId": 3,
-      "id": 17
-    },
-    {
-      "name": "Stingray",
-      "image": "stingray.jpeg",
-      "knowledge": "info",
-      "locationId": 2,
-      "id": 18
+      "id": 11
     }
   ],
   "locations": [

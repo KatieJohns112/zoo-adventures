@@ -1,12 +1,8 @@
 fieldset {
     color: tan;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-left: 5%;
-    font-size: .5cm;
+    display: flex;
+    justify-content: center;
 }
-
-
 
 .animal_form_title {
     font-size: 1.2cm;
@@ -23,6 +19,9 @@ fieldset {
 
 div.formgrid {
     margin-bottom:3%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .submit_animal_button {
@@ -33,7 +32,6 @@ div.formgrid {
     padding-right: 3%;
     font-family: Architects Daughter, sans-serif;
     font-size: .4cm;
-    
     margin-top: 2%;
     border-style: solid;
     border-color: white;
