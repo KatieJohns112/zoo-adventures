@@ -9,13 +9,13 @@ import { getAllLocations } from "../Locations/LocationManager"
 
 
 export const AnimalEditForm = () => {
-  const [animal, setAnimal] = useState({ name: "", image: "", knowledge:"", locationId:1 });
+  const [animal, setAnimal] = useState({ name: "", image: "", knowledge: "", locationId: 1 });
   const [isLoading, setIsLoading] = useState(false);
   const [image, setImages] = useState([]);
   const [location, setLocation] = useState([]);
-//   setImage is setting the new state
+  //   setImage is setting the new state
 
-  const {animalId} = useParams();
+  const { animalId } = useParams();
   const history = useHistory();
 
   const handleFieldChange = evt => {
@@ -36,35 +36,36 @@ export const AnimalEditForm = () => {
       knowledge: animal.knowledge,
       locationId: 1
     };
-console.log(editedAnimal)
-     update(editedAnimal)
-    .then(() => history.push("/animals")
-    )
+    console.log(editedAnimal)
+    update(editedAnimal)
+      .then(() => history.push("/animals")
+      )
   }
 
   useEffect(() => {
-   getAnimalById(animalId)
+    getAnimalById(animalId)
       .then(animal => {
         setAnimal(animal);
         setIsLoading(false);
       });
-      
-      getAllImages().then(picture => {
-          setImages(picture);
-      });
-      
-      getAllLocations().then(place => {
-          setLocation(place);
-      })
+
+    getAllImages().then(picture => {
+      setImages(picture);
+    });
+
+    getAllLocations().then(place => {
+      setLocation(place);
+    })
   }, []);
-  
+
   return (
     <>
-    <h3 className="animal_form_title">Edit animal card</h3>
+      <h3 className="animal_form_title">Edit animal card</h3>
       <form>
         <fieldset className="edit_animal_fieldset">
           <div className="formgrid">
-          <label className="animal-name"htmlFor="name">Animal name  </label> <input 
+            <div className="name">
+            <label className="animal-name" htmlFor="name">Animal name  </label> <input
               type="text"
               required
               className="form-control"
@@ -72,44 +73,47 @@ console.log(editedAnimal)
               id="name"
               value={animal.name}
             />
-
+          </div>
             <div className="animal__image">
-            <label className="animal-image" htmlFor="image">Image  </label> <select value={animal.image} name="address" id="image" onChange={handleFieldChange} className="form-control" >
-						<option value="0">Select an image</option>
-                        {/* array of images/ images is an array */}
-						{image.map(l => (
-							<option key={l.id} value={l.address}>
-								{l.name}
-							</option>
-						))}
-					</select>
-
-          <label className="animal-knowledge" htmlFor="knowledge"> Desired Knowledge  </label> 
-          <input
-              type="text"
-              required
-              className="form-control"
-              onChange={handleFieldChange}
-              id="knowledge"
-              value={animal.knowledge}
-            />
-
-<label className="animal-location" htmlFor="location">Location ID  </label>  <select value={animal.locationId} name="locationId" id="locationId" onChange={handleFieldChange} className="form-control" >
-						<option value="0">Select a location  </option>
-						{location.map(l => (
-							<option key={l.id} value={l.id}>
-								{l.name}
-							</option>
-						))}
-					</select>
-          </div>
-          <div className="alignRight">
-            <button
-              type="button" disabled={isLoading}
-              onClick={updateExistingAnimal}
-              className="submit_animal_button"
-            >Submit</button>
-          </div>
+              <label className="animal-image" htmlFor="image">Image  </label> <select value={animal.image} name="address" id="image" onChange={handleFieldChange} className="form-control" >
+                <option value="0">Select an image</option>
+                {/* array of images/ images is an array */}
+                {image.map(l => (
+                  <option key={l.id} value={l.address}>
+                    {l.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="knowledge">
+              <label className="animal-knowledge" htmlFor="knowledge"> Desired Knowledge  </label>
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={handleFieldChange}
+                id="knowledge"
+                value={animal.knowledge}
+              />
+            </div>
+            <div className="location">
+              <label className="animal-location" htmlFor="location">Location ID  </label>
+              <select value={animal.locationId} name="locationId" id="locationId" onChange={handleFieldChange} className="form-control" >
+                <option value="0">Select a location  </option>
+                {location.map(l => (
+                  <option key={l.id} value={l.id}>
+                    {l.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="alignRight">
+              <button
+                type="button" disabled={isLoading}
+                onClick={updateExistingAnimal}
+                className="submit_animal_button"
+              >Submit</button>
+            </div>
           </div>
         </fieldset>
       </form>
