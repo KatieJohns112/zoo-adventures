@@ -75,6 +75,8 @@ console.log(editedAnimal)
             <label className="animal-name"htmlFor="name">Animal name</label>
 
             <label className="animal-image"htmlFor="image">image</label>
+
+            <div className="animal__image">
             <select value={animal.image} name="address" id="image" onChange={handleFieldChange} className="form-control" >
 						<option value="0">Select an image  </option>
                         {/* array of images */}
@@ -84,7 +86,7 @@ console.log(editedAnimal)
 							</option>
 						))}
 					</select>
-
+</div>
             <input
               type="text"
               required

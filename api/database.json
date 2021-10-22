@@ -38,67 +38,130 @@
   ],
   "animals": [
     {
-      "id": 3,
       "name": "Elephant",
       "image": "elephant.jpeg",
-      "knowledge": "How fast can a stingray swim?",
-      "locationId": 1
+      "knowledge": "info",
+      "locationId": 1,
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Rhino",
       "image": "rhino.jpeg",
-      "knowledge": "How big do Rhinos get?",
-      "locationId": 3
+      "knowledge": "info",
+      "locationId": 2,
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "elephant",
-      "image": "elephant2.jpeg",
-      "knowledge": "How long do elephants live",
-      "locationId": 4
+      "name": "Alligator",
+      "image": "alligator.jpeg",
+      "knowledge": "info",
+      "locationId": 3,
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "zebra",
-      "image": "zebra.jpeg",
-      "knowledge": "How long do zebras live",
-      "locationId": 4
-    },
-    {
-      "id": 4,
-      "name": "giraffe",
-      "image": "giraffeimage.jpeg",
-      "knowledge": "How long do giraffes live",
-      "locationId": 2
+      "name": "Anaconda",
+      "image": "anaconda.jpeg",
+      "knowledge": "info",
+      "locationId": 4,
+      "id": 4
     },
     {
       "id": 5,
-      "name": "cheetah",
+      "name": "Cheetah",
       "image": "cheetah.jpeg",
-      "knowledge": "How long do cheetahs live",
-      "locationId": 2
+      "knowledge": "info",
+      "locationId": 1
     },
     {
-      "id": 6,
-      "name": "lion",
-      "image": "lion.jpeg",
-      "knowledge": "How long do lions live",
-      "locationId": 2
-    },
-    {
-      "id": 7,
-      "name": "shark",
+      "name": "Shark",
       "image": "dottedshark.jpeg",
-      "knowledge": "How long do sharks live",
-      "locationId": 3
+      "knowledge": "info",
+      "locationId": 2,
+      "id": 6
     },
     {
-      "id": 8,
-      "name": "clown fish",
+      "name": "Flamingo",
+      "image": "flamingo.jpeg",
+      "knowledge": "info",
+      "locationId": 3,
+      "id": 7
+    },
+    {
+      "name": "Giraffe",
+      "image": "giraffeimage.jpeg",
+      "knowledge": "info",
+      "locationId": 4,
+      "id": 8
+    },
+    {
+      "name": "Hippopotamus",
+      "image": "hippo.jpeg",
+      "knowledge": "info",
+      "locationId": 1,
+      "id": 9
+    },
+    {
+      "name": "Kangaroo",
+      "image": "kangaroo.jpeg",
+      "knowledge": "info",
+      "locationId": 2,
+      "id": 10
+    },
+    {
+      "name": "Lion",
+      "image": "lion.jpeg",
+      "knowledge": "info",
+      "locationId": 2,
+      "id": 11
+    },
+    {
+      "name": "Meerkat",
+      "image": "meerkat.jpeg",
+      "knowledge": "info",
+      "locationId": 2,
+      "id": 12
+    },
+    {
+      "name": "Monkey",
+      "image": "monkey.jpeg",
+      "knowledge": "info",
+      "locationId": 4,
+      "id": 13
+    },
+    {
+      "name": "Clown Fish",
       "image": "nemo.jpeg",
-      "knowledge": "How long do fish live",
-      "locationId": 3
+      "knowledge": "info",
+      "locationId": 2,
+      "id": 14
+    },
+    {
+      "name": "Parrot",
+      "image": "parrot.jpeg",
+      "knowledge": "info",
+      "locationId": 3,
+      "id": 15
+    },
+    {
+      "name": "Penguin",
+      "image": "penguin.jpeg",
+      "knowledge": "info",
+      "locationId": 3,
+      "id": 16
+    },
+    {
+      "name": "Sloth",
+      "image": "sloth.jpeg",
+      "knowledge": "info",
+      "locationId": 3,
+      "id": 17
+    },
+    {
+      "name": "Stingray",
+      "image": "stingray.jpeg",
+      "knowledge": "info",
+      "locationId": 2,
+      "id": 18
     }
   ],
   "locations": [
@@ -141,6 +204,96 @@
       "id": 2,
       "name": "rhino",
       "address": "rhino.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "alligator",
+      "address": "alligator.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "anaconda",
+      "address": "anaconda.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "cheetah",
+      "address": "cheetah.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "shark",
+      "address": "dottedshark.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "elephhant",
+      "address": "elephant2.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "flamingo",
+      "address": "flamingo.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "giraffe",
+      "address": "giraffeimage.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "hipo",
+      "address": "hipo.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "kangaroo",
+      "address": "kangaroo.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "lion",
+      "address": "lion.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "meerkat",
+      "address": "meerkat.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "monkey",
+      "address": "monkey.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "clown fish",
+      "address": "nemo.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "parrot",
+      "address": "parrot.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "penguin",
+      "address": "penguin.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "sloth",
+      "address": "sloth.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "stingray",
+      "address": "stingray.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "zebra",
+      "address": "zebra.jpeg"
     }
   ]
 }
