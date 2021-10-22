@@ -7,26 +7,34 @@ import "./AnimalEditForm.css"
 import { getAllImages } from "../../ImageManager"
 import { getAllLocations } from "../Locations/LocationManager"
 
-
+// AnimalEditForm holds all information below
 export const AnimalEditForm = () => {
+  // animal is the non changing state of the data | setAnimal is returned after the state has changed
   const [animal, setAnimal] = useState({ name: "", image: "", knowledge: "", locationId: 1 });
   const [isLoading, setIsLoading] = useState(false);
   const [image, setImages] = useState([]);
   const [location, setLocation] = useState([]);
-  //   setImage is setting the new state
 
+// useParams refers to the <route>
   const { animalId } = useParams();
   const history = useHistory();
+  // history and useHistory refer to all URLs visited and push new ones onto that stack
 
+  // handleFieldChnage sets a new state for whatever is being inputed
   const handleFieldChange = evt => {
+    // stateToChange is changing the state of the app when animal is called
     const stateToChange = { ...animal };
     stateToChange[evt.target.id] = evt.target.value;
+    // setAnimal becomes the new state of the app
     setAnimal(stateToChange);
   };
 
+  // updateExistingAnimal is updating an existing animal
   const updateExistingAnimal = evt => {
+    // prevent HTML from carrying our default actions
     evt.preventDefault()
     setIsLoading(true);
+    // indicates an app is loading information
 
     // This is an edit, so we need the id
     const editedAnimal = {
@@ -41,8 +49,9 @@ export const AnimalEditForm = () => {
       .then(() => history.push("/animals")
       )
   }
-
+// chnaging the DOM in a react component
   useEffect(() => {
+    // getAnimalById from animal manager and call animal Id | => is defining a function | setAnimal is calling animal and setting the new state of the DOM
     getAnimalById(animalId)
       .then(animal => {
         setAnimal(animal);

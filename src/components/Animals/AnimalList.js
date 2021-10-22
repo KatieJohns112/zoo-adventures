@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-//import the components we will need
 import { AnimalCard } from './AnimalCard';
 import { getAllAnimals , deleteAnimal } from './AnimalManager';
 import { useHistory } from 'react-router-dom';
@@ -34,7 +33,6 @@ export const AnimalList = () => {
   // Finally we use .map() to "loop over" the animals array to show a list of animal cards
   return (
 <>
-    {/* //add this button above your display of animal cards */}
   <section className="section-content">
     <button type="button"
       className="new-animal-button"

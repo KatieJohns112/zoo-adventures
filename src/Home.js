@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css"
-import logo from "./images/wildlife.jpeg"
+import logo from "./images/all-animals.jpeg"
 
 
 export const Home = () => (
