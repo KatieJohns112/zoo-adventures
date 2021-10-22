@@ -64,7 +64,7 @@ console.log(editedAnimal)
       <form>
         <fieldset className="edit_animal_fieldset">
           <div className="formgrid">
-            <input 
+          <label className="animal-name"htmlFor="name">Animal name  </label> <input 
               type="text"
               required
               className="form-control"
@@ -72,22 +72,20 @@ console.log(editedAnimal)
               id="name"
               value={animal.name}
             />
-            <label className="animal-name"htmlFor="name">Animal name</label>
-
-            <label className="animal-image"htmlFor="image">image</label>
 
             <div className="animal__image">
-            <select value={animal.image} name="address" id="image" onChange={handleFieldChange} className="form-control" >
-						<option value="0">Select an image  </option>
-                        {/* array of images */}
+            <label className="animal-image" htmlFor="image">Image  </label> <select value={animal.image} name="address" id="image" onChange={handleFieldChange} className="form-control" >
+						<option value="0">Select an image</option>
+                        {/* array of images/ images is an array */}
 						{image.map(l => (
 							<option key={l.id} value={l.address}>
 								{l.name}
 							</option>
 						))}
 					</select>
-</div>
-            <input
+
+          <label className="animal-knowledge" htmlFor="knowledge"> Desired Knowledge  </label> 
+          <input
               type="text"
               required
               className="form-control"
@@ -95,11 +93,9 @@ console.log(editedAnimal)
               id="knowledge"
               value={animal.knowledge}
             />
-            <label className="animal-knowledge"htmlFor="knowledge">Desired knowledge</label>
 
-            <label className="animal-location"htmlFor="breed">Location ID</label>
-            <select value={animal.locationId} name="locationId" id="locationId" onChange={handleFieldChange} className="form-control" >
-						<option value="0">Select a location</option>
+<label className="animal-location" htmlFor="location">Location ID  </label>  <select value={animal.locationId} name="locationId" id="locationId" onChange={handleFieldChange} className="form-control" >
+						<option value="0">Select a location  </option>
 						{location.map(l => (
 							<option key={l.id} value={l.id}>
 								{l.name}
@@ -111,8 +107,9 @@ console.log(editedAnimal)
             <button
               type="button" disabled={isLoading}
               onClick={updateExistingAnimal}
-              className="btn btn-primary"
+              className="submit_animal_button"
             >Submit</button>
+          </div>
           </div>
         </fieldset>
       </form>
