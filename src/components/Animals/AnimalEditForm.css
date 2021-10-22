@@ -1,9 +1,40 @@
 fieldset {
     color: tan;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 5%;
+    font-size: .5cm;
 }
 
-.edit_animal_fieldset {
-    padding-left: 12%;
-    margin-left:30%;
+
+
+.animal_form_title {
+    font-size: 1.2cm;
+    font-family: Architects Daughter, sans-serif;
+    border-style: solid;
+    border-left-color: white;
+    border-right-color: tan;
+    border-top-color: grey;
+    border-bottom-color: rgb(141, 105, 57);
+    border-width: .3cm;
     margin-right: 30%;
+    margin-left: 30%;
+}
+
+div.formgrid {
+    margin-bottom:3%;
+}
+
+.submit_animal_button {
+    background-color: grey;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: Architects Daughter, sans-serif;
+    font-size: .4cm;
+    
+    margin-top: 2%;
+    border-style: solid;
+    border-color: white;
 }
