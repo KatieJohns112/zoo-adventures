@@ -5,7 +5,7 @@ import { Register } from "./components/auth/Register"
 import { NavBar } from "./nav/NavBar"
 import { ApplicationViews } from "./ApplicationViews"
 import "./ZooAdventure.css"
-import logo from "./images/ZooAdventuresLOGO.png.png"
+import logo from "./images/logo-giraffe.png"
 
 
 export const ZooAdventure = () => (
@@ -17,6 +17,7 @@ export const ZooAdventure = () => (
               <>
                <img className="logo_navbar" src={logo} alt="logo"></img>
                <h1 className="main_zoo">Zoo A d v e n t u r e s</h1>
+           
                   <NavBar />
                   <ApplicationViews />
               </>
