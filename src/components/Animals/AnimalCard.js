@@ -21,8 +21,8 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
             {animal.image != "" ?  <img src={`../../images/${animal.image}`} alt="Animal" className="animal__image"/> : <p>There isn't an image.</p>}
             </picture>
                 <h3>{animal.name}</h3>
-                <p>What I want to know: {animal.knowledge}</p>
-                <p>Located at: {animal.location.name}</p>
+                <p>What I want to know  : {animal.knowledge}</p>
+                <p>Located at  : {animal.location.name}</p>
                 {/* handleDeleteAnimal removes animal from the DOM and database | onClick refers to performing an action when the button is clicked */}
                 <button className="remove_button" type="button" onClick={() => handleDeleteAnimal(animal.id)}>Remove</button>
                 <button className="edit_button" type="button" onClick={() => history.push(`/animals/${animal.id}/edit`)}>Edit</button>

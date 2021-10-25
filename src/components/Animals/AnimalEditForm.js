@@ -20,7 +20,7 @@ export const AnimalEditForm = () => {
   const history = useHistory();
   // history and useHistory refer to all URLs visited and push new ones onto that stack
 
-  // handleFieldChnage sets a new state for whatever is being inputed
+  // handleFieldChange sets a new state for whatever is being inputed
   const handleFieldChange = evt => {
     // stateToChange is changing the state of the app when animal is called
     const stateToChange = { ...animal };
@@ -39,6 +39,7 @@ export const AnimalEditForm = () => {
     // This is an edit, so we need the id
     const editedAnimal = {
       id: animalId,
+      userId : parseInt(sessionStorage.getItem("app_user_id")),
       name: animal.name,
       image: animal.image,
       knowledge: animal.knowledge,
@@ -49,7 +50,7 @@ export const AnimalEditForm = () => {
       .then(() => history.push("/animals")
       )
   }
-// chnaging the DOM in a react component
+// changing the DOM in a react component
   useEffect(() => {
     // getAnimalById from animal manager and call animal Id | => is defining a function | setAnimal is calling animal and setting the new state of the DOM
     getAnimalById(animalId)
