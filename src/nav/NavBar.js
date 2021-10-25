@@ -15,15 +15,15 @@ const history = useHistory();
                 <li className="nav_item">
                     < Link className="nav_link" to="/animals">Animal List</Link>
                 </li>
-                {/* <li className="nav_item">
+                <li className="nav_item">
                     < Link className="nav_link" to="/events">Events</Link>
-                </li> */}
+                </li>
                 <li className="nav_item">
                     < Link className="nav_link" to="/locations">Zoo Locations</Link>
                 </li>
-                {/* <li className="nav_item">
+                <li className="nav_item">
                     < Link className="nav_link" to="/reviews">Reviews</Link>
-                </li> */}
+                </li>
                 <li className="nav__item">
                      <button className="nav__button" onClick={() => {
                        sessionStorage.removeItem("app_user_id");
