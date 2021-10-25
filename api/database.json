@@ -34,24 +34,93 @@
       "email": "Jjohns@gmail.com",
       "name": "Joshua Johns",
       "id": 7
+    },
+    {
+      "email": "Sryan@gmail.com",
+      "name": "Susan Ryan",
+      "id": 8
     }
   ],
   "animals": [
     {
       "id": 3,
       "userId": 1,
-      "name": "Not Brady",
+      "name": "Sloth",
       "image": "sloth.jpeg",
-      "knowledge": "info",
+      "knowledge": "How fast can a sloth move?",
       "locationId": 1
     },
     {
-      "name": "Elephant",
+      "id": 4,
       "userId": 1,
+      "name": "Elephant",
       "image": "elephant.jpeg",
-      "knowledge": "info",
+      "knowledge": "How long does an elephant live?",
+      "locationId": 1
+    },
+    {
+      "name": "Flamingo",
+      "userId": 1,
+      "image": "flamingo.jpeg",
+      "knowledge": "How mnay different colors can flamingos be?",
       "locationId": 3,
-      "id": 4
+      "id": 5
+    },
+    {
+      "name": "Cheetah",
+      "userId": 1,
+      "image": "cheetah.jpeg",
+      "knowledge": "How fast can a cheetah run?",
+      "locationId": 3,
+      "id": 6
+    },
+    {
+      "name": "Stingray",
+      "userId": 1,
+      "image": "stingray.jpeg",
+      "knowledge": "Are stingrays dangerous?",
+      "locationId": 3,
+      "id": 7
+    },
+    {
+      "name": "Clown Fish",
+      "userId": 1,
+      "image": "nemo.jpeg",
+      "knowledge": "Do clown fish live deep in the ocean?",
+      "locationId": 3,
+      "id": 8
+    },
+    {
+      "name": "Meerkat",
+      "userId": 1,
+      "image": "meerkat.jpeg",
+      "knowledge": "How tall do meerkats get?",
+      "locationId": 4,
+      "id": 9
+    },
+    {
+      "name": "Zebra",
+      "userId": 1,
+      "image": "zebra.jpeg",
+      "knowledge": "Are zebras nice animals?",
+      "locationId": 2,
+      "id": 10
+    },
+    {
+      "name": "Parrot",
+      "userId": 1,
+      "image": "parrot.jpeg",
+      "knowledge": "Can you talk to parrots?",
+      "locationId": 1,
+      "id": 11
+    },
+    {
+      "name": "Monkey",
+      "userId": 1,
+      "image": "monkey.jpeg",
+      "knowledge": "What sounds do monkeys make?",
+      "locationId": 2,
+      "id": 12
     }
   ],
   "locations": [
