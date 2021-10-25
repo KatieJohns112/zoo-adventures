@@ -13,6 +13,7 @@ export const AnimalList = () => {
   const getAnimals = () => {
     // After the data comes back from the API, we
     //  use the setAnimals function to update state
+    // getting all animals from the api then getting animals form the api the calling animalsFromAPI on setAnimals rendering the new state of the webpage
     return getAllAnimals().then(animalsFromAPI => {
       setAnimals(animalsFromAPI)
     });

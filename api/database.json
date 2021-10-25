@@ -123,6 +123,14 @@
       "knowledge": "How fast can a shark swim?",
       "locationId": 3,
       "id": 13
+    },
+    {
+      "name": "Lion",
+      "userId": 1,
+      "image": "lion.jpeg",
+      "knowledge": "How big is a lion?",
+      "locationId": 3,
+      "id": 14
     }
   ],
   "locations": [
@@ -248,6 +256,32 @@
       "id": 20,
       "name": "zebra",
       "address": "zebra.jpeg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Katie Johns",
+      "locationId": 1,
+      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
+      "date": "10/3/2021",
+      "image": "goats.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Katie Johns",
+      "locationId": 1,
+      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
+      "date": "10/3/2021",
+      "image": "goats.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Katie Johns",
+      "locationId": 1,
+      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
+      "date": "10/3/2021",
+      "image": "goats.jpg"
     }
   ]
 }
