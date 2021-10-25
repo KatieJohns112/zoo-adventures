@@ -19,3 +19,11 @@ body {
    margin-left: 10%;
    margin-right: 10%;
 }
+
+footer {
+    background-color: tan;
+    text-align: center;
+    padding-bottom: .1cm;
+    padding-top: .1cm;
+    font-weight: bold;
+  }
