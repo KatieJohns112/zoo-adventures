@@ -29,7 +29,6 @@ div.formgrid {
 .submit_animal_button {
     background-color: grey;
     padding-top: .5%;
-    padding-bottom: .5%;
     padding-left: 3%;
     padding-right: 3%;
     font-family: Architects Daughter, sans-serif;
@@ -37,4 +36,10 @@ div.formgrid {
     margin-top: 2%;
     border-style: solid;
     border-color: white;
+}
+
+.edit_animal_fieldset {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 20%;
 }

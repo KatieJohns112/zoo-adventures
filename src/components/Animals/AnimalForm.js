@@ -8,6 +8,7 @@ import "./AnimalForm.css"
 export const AnimalForm = () => {
     const [animal, setAnimal] = useState({
         name: "",
+        // parse the Int from app_user_id
         userId: parseInt(sessionStorage.getItem('app_user_id')),
         image:"",
         knowledge:"",

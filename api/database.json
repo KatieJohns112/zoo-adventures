@@ -38,92 +38,20 @@
   ],
   "animals": [
     {
+      "id": 3,
+      "userId": 1,
+      "name": "Not Brady",
+      "image": "sloth.jpeg",
+      "knowledge": "info",
+      "locationId": 1
+    },
+    {
       "name": "Elephant",
+      "userId": 1,
       "image": "elephant.jpeg",
-      "knowledge": "info",
-      "locationId": 1,
-      "id": 1,
-      "userId": 1
-    },
-    {
-      "name": "Rhino",
-      "image": "rhino.jpeg",
-      "knowledge": "info",
-      "locationId": 2,
-      "id": 2,
-      "userId": 2
-    },
-    {
-      "name": "sally",
-      "userId": 1,
-      "image": "giraffeimage.jpeg",
-      "knowledge": "info",
-      "locationId": 2,
-      "id": 3
-    },
-    {
-      "name": "Rhino",
-      "userId": 1,
-      "image": "rhino.jpeg",
       "knowledge": "info",
       "locationId": 3,
       "id": 4
-    },
-    {
-      "name": "Flamingo",
-      "userId": 1,
-      "image": "flamingo.jpeg",
-      "knowledge": "info",
-      "locationId": 3,
-      "id": 5
-    },
-    {
-      "name": "Meerkat",
-      "userId": 1,
-      "image": "meerkat.jpeg",
-      "knowledge": "info",
-      "locationId": 3,
-      "id": 6
-    },
-    {
-      "name": "Penguin",
-      "userId": 1,
-      "image": "penguin.jpeg",
-      "knowledge": "info",
-      "locationId": 4,
-      "id": 7
-    },
-    {
-      "name": "Kangaroo",
-      "userId": 1,
-      "image": "kangaroo.jpeg",
-      "knowledge": "info",
-      "locationId": 4,
-      "id": 8
-    },
-    {
-      "name": "Stingray",
-      "userId": 1,
-      "image": "stingray.jpeg",
-      "knowledge": "info",
-      "locationId": 4,
-      "id": 9
-    },
-    {
-      "name": "Lion",
-      "userId": 1,
-      "image": "lion.jpeg",
-      "knowledge": "info",
-      "locationId": 3,
-      "id": 10
-    },
-    {
-      "name": "Monkey",
-      "userId": 1,
-      "image": "monkey.jpeg",
-      "knowledge": "info",
-      "locationId": 4,
-      "id": 11
     }
   ],
   "locations": [
