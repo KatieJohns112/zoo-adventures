@@ -8,8 +8,8 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
     const userLogged = parseInt(sessionStorage.getItem("app_user_id"))
     // parseInt to get the integer value of the user id
     console.log(animal)
-    // == serves as an if statement then return....
-    if(animal.userId == userLogged) {
+    // === means you are comparing the same value and data type
+    if(animal.userId === userLogged) {
         return (
 
         <div className= "main-card">

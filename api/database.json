@@ -39,6 +39,16 @@
       "email": "Sryan@gmail.com",
       "name": "Susan Ryan",
       "id": 8
+    },
+    {
+      "email": "Sjohns@gmail.com",
+      "name": "Sharleen Johns",
+      "id": 9
+    },
+    {
+      "email": "Mlong@gmail.com",
+      "name": "Mark Long",
+      "id": 10
     }
   ],
   "animals": [
@@ -83,22 +93,6 @@
       "id": 7
     },
     {
-      "name": "Clown Fish",
-      "userId": 1,
-      "image": "nemo.jpeg",
-      "knowledge": "Do clown fish live deep in the ocean?",
-      "locationId": 3,
-      "id": 8
-    },
-    {
-      "name": "Meerkat",
-      "userId": 1,
-      "image": "meerkat.jpeg",
-      "knowledge": "How tall do meerkats get?",
-      "locationId": 4,
-      "id": 9
-    },
-    {
       "name": "Zebra",
       "userId": 1,
       "image": "zebra.jpeg",
@@ -115,12 +109,20 @@
       "id": 11
     },
     {
-      "name": "Monkey",
+      "name": "Kangaroo",
       "userId": 1,
-      "image": "monkey.jpeg",
-      "knowledge": "What sounds do monkeys make?",
-      "locationId": 2,
+      "image": "kangaroo.jpeg",
+      "knowledge": "How high can a kangaroo jump?",
+      "locationId": 3,
       "id": 12
+    },
+    {
+      "name": "Shark",
+      "userId": 1,
+      "image": "dottedshark.jpeg",
+      "knowledge": "How fast can a shark swim?",
+      "locationId": 3,
+      "id": 13
     }
   ],
   "locations": [
@@ -141,13 +143,6 @@
     {
       "id": 3,
       "name": "Knoxville Zoo",
-      "address": "8422 Johnson Pike",
-      "hours": "9 a.m to 5 p.m.",
-      "price": "$$$"
-    },
-    {
-      "id": 4,
-      "name": "Chattanooga Zoo",
       "address": "8422 Johnson Pike",
       "hours": "9 a.m to 5 p.m.",
       "price": "$$$"
