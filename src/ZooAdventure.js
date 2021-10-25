@@ -8,6 +8,7 @@ import "./ZooAdventure.css"
 import logo from "./images/logo-giraffe.png"
 
 
+
 export const ZooAdventure = () => (
     <>
       <Route
@@ -20,6 +21,7 @@ export const ZooAdventure = () => (
            
                   <NavBar />
                   <ApplicationViews />
+                  <footer>Zoo Adventures 2021</footer> 
               </>
             )
           } else {
