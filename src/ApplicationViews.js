@@ -6,6 +6,7 @@ import { LocationList } from "./components/Locations/LocationLIst"
 import { AnimalForm } from "./components/Animals/AnimalForm"
 import { AnimalEditForm } from "./components/Animals/AnimalEditForm"
 import { ReviewList } from "./components/Reviews/ReviewList"
+import { ReviewForm } from "./components/Reviews/NewReviewForm"
 
 export const ApplicationViews = () => {
     return (
@@ -31,13 +32,13 @@ export const ApplicationViews = () => {
               <LocationList />
             </Route>
 
-            <Route path="/reviews">
-              <ReviewList />
+            <Route exact path="/reviews/create">
+              <ReviewForm />
             </Route>
 
-            {/* <Route path="/locations">
-              <LocationList />
-            </Route> */}
+            <Route exact path="/reviews">
+              <ReviewList />
+            </Route>
         </>
     )
 }
