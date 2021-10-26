@@ -298,58 +298,57 @@
   "reviews": [
     {
       "id": 1,
+      "userId": 1,
       "name": "Katie Johns",
-      "locationId": 1,
-      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
-      "date": "10/3/2021",
       "image": "ryan-petting-goat-with-dad.jpeg",
-      "userId": 1
+      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
+      "timestamp": 1633564664154,
+      "locationId": 1
     },
     {
       "id": 2,
+      "userId": 1,
       "name": "Katie Johns",
-      "locationId": 1,
-      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
-      "date": "10/3/2021",
       "image": "katie-and-ryan.jpeg",
-      "userId": 1
+      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
+      "timestamp": 1633564664154,
+      "locationId": 1
     },
     {
       "id": 3,
-      "name": "Katie Johns",
-      "locationId": 1,
-      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
-      "date": "10/3/2021",
+      "userId": 1,
+      "name": "Josh Johns",
       "image": "ryan-and-goat.jpeg",
-      "userId": 1
+      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
+      "timestamp": 1633564664154,
+      "locationId": 1
     },
     {
       "id": 4,
       "name": "Katie Johns",
       "locationId": 1,
       "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
-      "date": "10/3/2021",
+      "timestamp": 1633564664154,
       "image": "ryan-and-colton.jpeg",
       "userId": 1
     },
     {
       "id": 5,
+      "userId": 1,
       "name": "Katie Johns",
-      "locationId": 1,
-      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
-      "date": "10/3/2021",
       "image": "ryan-at-the-zoo.jpeg",
-      "userId": 1
+      "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
+      "timestamp": 1633564664154,
+      "locationId": 1
     },
     {
       "id": 6,
       "name": "Katie Johns",
       "locationId": 1,
       "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
-      "date": "10/3/2021",
+      "timestamp": 1633564664154,
       "image": "ryan-on-cows.jpeg",
       "userId": 1
     }
-    
   ]
 }

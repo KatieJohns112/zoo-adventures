@@ -27,3 +27,13 @@ export const getReviewById = (reviewId) => {
         body: JSON.stringify(newReview)
     }).then(response => response.json())
   }
+
+  export const update = (editedReview) => {
+    return fetch(`${remoteURL}/reviews/${editedReview.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedReview)
+    }).then(data => data.json());
+  }
