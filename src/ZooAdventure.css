@@ -21,9 +21,10 @@ body {
 }
 
 footer {
-    background-color: tan;
+    background-color: lightgrey;
     text-align: center;
     padding-bottom: .1cm;
     padding-top: .1cm;
     font-weight: bold;
+    margin-bottom: .3cm;
   }

@@ -85,7 +85,7 @@ export const AnimalForm = () => {
 			</fieldset>
             <fieldset className="image_fieldset">
 				<div className="form-group">
-					<label htmlFor="image">image  </label>
+					<label htmlFor="image">Image  </label>
 					<select value={animal.image} name="address" id="image" onChange={handleControlledInputChange} className="form-control" >
 						<option value="0">Select an image  </option>
 						{images.map(l => (
