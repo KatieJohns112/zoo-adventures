@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import { addReview } from "./ReviewManager";
 import { getAllLocations } from "../Locations/LocationManager";
 import { getAllImages } from "../../ImageManager";
+import "./NewReviewForm.css"
 
 export const ReviewForm = () => {
     const [review, setReview] = useState({
@@ -58,7 +59,7 @@ export const ReviewForm = () => {
 
     return (
         <form className="review_form">
-            <h3 className="review_form_title">Create a new review</h3>
+            <h5 className="review_form_title">Create a new review</h5>
             <fieldset className="name_fieldset_review">
                 <div className="form-group">
                     <label htmlFor="name">Reviewe name  </label>
@@ -92,7 +93,7 @@ export const ReviewForm = () => {
 			</fieldset>
             <fieldset className="review_image_fieldset">
 				<div className="form-group">
-					<label htmlFor="image">image  </label>
+					<label htmlFor="image">Image  </label>
 					<select value={review.image} name="address" id="image" onChange={handleControlledInputChange} className="form-control" >
 						<option value="0">Select an image  </option>
 						{images.map(l => (

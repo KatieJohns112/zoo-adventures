@@ -1,0 +1,79 @@
+h5 {
+    color:tan;
+    text-align: center;
+    font-size: .8cm;
+    border-style: solid;
+    border-left-color: white;
+    border-right-color: tan;
+    border-top-color: grey;
+    border-bottom-color: rgb(141, 105, 57);
+    border-width: .3cm;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.date_fieldset {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+    display: flex;
+    justify-content: left;
+}
+
+.statement_fieldset {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+    display: flex;
+    justify-content: left;
+}
+
+.review_location_fieldset {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+    display: flex;
+    justify-content: left;
+}
+
+.review_image_fieldset {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+    display: flex;
+    justify-content: left;
+}
+
+.name_fieldset_review {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+    display: flex;
+    justify-content: left;
+}
+
+.save_review_button {
+    background-color: grey;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: Architects Daughter, sans-serif;
+    font-size: .4cm;
+    margin-left: 45%;
+    margin-top: 1%;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 15%;
+    font-weight: bold;
+}

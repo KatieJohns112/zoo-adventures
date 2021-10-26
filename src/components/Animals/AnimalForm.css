@@ -1,24 +1,36 @@
 /* CSS for animal form */
 
 .name_fieldset {
-    text-align: center;
+    display: flex;
+    justify-content: left;
     margin-left:30%;
     margin-right:30%;
     color:tan;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
 }
 
 .knowledge_fieldset {
-    text-align: center;
+    display: flex;
+    justify-content: left;
     margin-left:30%;
     margin-right:30%;
     color:tan;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
 }
 
 .zoo_fieldset {
-    text-align: center;
+    display: flex;
+    justify-content: left;
     margin-left:30%;
     margin-right:30%;
     color:tan;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
 }
 
 .animal_form_title {
@@ -48,15 +60,20 @@
     font-family: Architects Daughter, sans-serif;
     font-size: .4cm;
     margin-left: 45%;
-    margin-top: 2%;
+    margin-top: 1%;
     border-style: solid;
     border-color: white;
-    margin-bottom: 15%
+    margin-bottom: 15%;
+    font-weight: bold;
 }
 
 .image_fieldset {
-    text-align: center;
+    display: flex;
+    justify-content: left;
     margin-left:30%;
     margin-right:30%;
     color:tan; 
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
 }
