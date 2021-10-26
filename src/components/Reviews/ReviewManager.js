@@ -17,3 +17,13 @@ export const getReviewById = (reviewId) => {
       method: "DELETE"
     }).then(result => result.json())
   }
+
+  export const addReview = (newReview) => {
+    return fetch(`${remoteURL}/reviews`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newReview)
+    }).then(response => response.json())
+  }
