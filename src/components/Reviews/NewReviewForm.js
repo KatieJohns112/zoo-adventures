@@ -10,7 +10,7 @@ export const ReviewForm = () => {
         name: "",
         userId: parseInt(sessionStorage.getItem('app_user_id')),
         statement: "",
-        date: "",
+        timestamp:Date.now(),
         image: "",
         locationId: 0
     });
@@ -66,12 +66,7 @@ export const ReviewForm = () => {
                     <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Animal name" value={review.name} />
                 </div>
             </fieldset>
-            <fieldset className="date_fieldset">
-            <div className="form-group">
-					<label htmlFor="location">What do you want to learn about this animal?  </label>
-					<input type="date" id="date" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="what do you want to know?" value={review.date} />
-				</div>
-            </fieldset>
+         
             <fieldset className="statement_fieldset">
             <div className="form-group">
 					<label htmlFor="statement">What do you want to learn about this animal?  </label>

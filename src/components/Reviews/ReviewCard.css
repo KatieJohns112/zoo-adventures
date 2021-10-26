@@ -19,7 +19,6 @@
 
   .card-review-name {
       color: black;
-      padding-top: 4%;
       font-size: 16px;
       margin-left: 3%;
       margin-bottom: -.5%;
@@ -69,7 +68,7 @@
   }
 
   .card_content_review {
-      max-height: 600px;
+  
       max-width: 500px;
   }
 
@@ -84,6 +83,12 @@
     padding-right: 1%;
     border-style: solid;
     border-color: white;
+  }
+
+  .star_chart {
+   padding-top: 1cm;
+   margin-left: 3%;
+   margin-bottom: -5%;
   }
 
  

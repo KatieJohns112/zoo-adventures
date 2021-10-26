@@ -7,6 +7,7 @@ import { AnimalForm } from "./components/Animals/AnimalForm"
 import { AnimalEditForm } from "./components/Animals/AnimalEditForm"
 import { ReviewList } from "./components/Reviews/ReviewList"
 import { ReviewForm } from "./components/Reviews/NewReviewForm"
+import { ReviewEditForm } from "./components/Reviews/ReviewEditForm"
 
 export const ApplicationViews = () => {
     return (
@@ -34,6 +35,10 @@ export const ApplicationViews = () => {
 
             <Route exact path="/reviews/create">
               <ReviewForm />
+            </Route>
+
+            <Route path="/reviews/:reviewId(\d+)/edit">
+              <ReviewEditForm /> 
             </Route>
 
             <Route exact path="/reviews">
