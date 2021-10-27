@@ -49,7 +49,7 @@ export const Login = () => {
                   <h1 className="zoo-adventures">Zoo Adventures</h1>
                     <h2>Please sign in</h2>
                     <fieldset className="login_fieldset">
-                        <label className="email_input" htmlFor="inputEmail"> Email address   </label>
+                        <label className="email_input" htmlFor="inputEmail"> Email address </label>
                         <input type="email"
                             id="email"
                             className="form-control"
