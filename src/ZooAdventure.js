@@ -5,7 +5,7 @@ import { Register } from "./components/auth/Register"
 import { NavBar } from "./nav/NavBar"
 import { ApplicationViews } from "./ApplicationViews"
 import "./ZooAdventure.css"
-import logo from "./images/logo-giraffe.png"
+import logo from "./images/ZooAdventuresLOGO.png.png"
 
 
 

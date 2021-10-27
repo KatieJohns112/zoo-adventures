@@ -8,6 +8,7 @@ import { AnimalEditForm } from "./components/Animals/AnimalEditForm"
 import { ReviewList } from "./components/Reviews/ReviewList"
 import { ReviewForm } from "./components/Reviews/NewReviewForm"
 import { ReviewEditForm } from "./components/Reviews/ReviewEditForm"
+import { EventList } from "./components/Events/EventList"
 
 export const ApplicationViews = () => {
     return (
@@ -43,6 +44,10 @@ export const ApplicationViews = () => {
 
             <Route exact path="/reviews">
               <ReviewList />
+            </Route>
+
+            <Route exact path="/events">
+              <EventList />
             </Route>
         </>
     )

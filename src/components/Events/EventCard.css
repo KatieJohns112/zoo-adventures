@@ -1,0 +1,42 @@
+.card_event {
+    border-radius: 10px;
+    background-color: grey;
+    display:  flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: .5cm;
+    border-color: white;
+    border-style: solid;
+    border-width: .1cm;
+    margin-top: 1%;
+    height: 500px;
+    width: 500px;
+}
+
+.container-cards-events {
+    display:  flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .events_header {
+    font-size: .9cm;
+    text-align: left;
+    margin-right: 50%;
+    margin-left: 4%;
+    border: solid white;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: black;
+    border-right-color: black;
+padding-top: 2%;
+padding-bottom: 2%;
+  }
+
+  
+.logo-logo-logo {
+    margin-left: 60%;
+    margin-top: -20%;
+    max-height: 400px;
+ 
+}
