@@ -354,24 +354,24 @@
   "events": [
     {
       "id": 1,
-      "image": "",
-      "name": "boo at the zoo",
+      "image": "booatthezoo.jpeg",
+      "name": "trick or treat",
       "locationId": 1,
       "description": "dress up and come trick or treat at the zoo",
       "date": "10/31/2021"
     },
     {
       "id": 2,
-      "image": "",
-      "name": "boo at the zoo",
+      "image": "lanternfestival.jpeg",
+      "name": "lights at the zoo",
       "locationId": 1,
       "description": "dress up and come trick or treat at the zoo",
       "date": "10/31/2021"
     },
     {
       "id": 3,
-      "image": "",
-      "name": "boo at the zoo",
+      "image": "sunsetatzoo.jpeg",
+      "name": "zoo slumber party",
       "locationId": 1,
       "description": "dress up and come trick or treat at the zoo",
       "date": "10/31/2021"
