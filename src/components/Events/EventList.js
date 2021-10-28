@@ -31,7 +31,7 @@ export const EventList = () => {
         <>
       
       
-        <h2 className="events"> Zoo Events for the whole family ! Discover fun events for both adults and children alike happening at your local zoos. Feel free to add a new event you've heard about using our "add new event" feature below. All zoo events that have been submitted can be found below in the events list. Each zoo name is displayed on each card to make navigating to your favorite zoos for events easy. We hope to see you there !</h2>
+        <h2 className="events"> Zoo Events for the whole family ! Discover fun events for both adults and children alike happening at your local zoos. Feel free to add a new event you've heard about using our "add new event" feature below. All zoo events that have been submitted can be found below in the events list. Each zoo name is displayed on each card to make navigating to your favorite zoos for events easy. We hope to see you and your family there !</h2>
         <img className="logo-logo-logo" src={logo} alt="logo"></img>
             <section className="section-content">
                 <button type="button"

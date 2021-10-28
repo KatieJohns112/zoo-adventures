@@ -42,10 +42,12 @@
 }
 
 .event-image {
- margin-left: 6.5%;
- margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  border-style: solid;
  border-color: black;
+ margin-top: 3%;
 }
 
 h3 {
@@ -64,7 +66,7 @@ font-size: .5cm;
 
 .event_description {
     font-weight: bold;
-    font-size: .5cm;
+    font-size: .4cm;
 }
 
 .button_remove_event {
@@ -79,7 +81,7 @@ font-size: .5cm;
     margin-left: 4%;
     background-color: lightgrey;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     padding-top: .5%;
     padding-bottom: .5%;
     padding-left: 1%;

@@ -106,7 +106,7 @@ export const EventForm = () => {
 			</fieldset>
             <button className="save_event_button"
 				onClick={handleClickSaveEvent}>
-				Save Animal
+				Save Event
           </button>
         </form>
     )

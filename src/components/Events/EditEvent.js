@@ -9,7 +9,7 @@ import { getAllLocations } from "../Locations/LocationManager"
 
 export const EventEditForm = () => {
     // animal is the non changing state of the data | setAnimal is returned after the state has changed
-    const [eventState, setEvent] = useState({ name: "", image: "", desription: "", locationId: 1, date: "" });
+    const [eventState, setEvent] = useState({ name: "", image: "", description: "", locationId: 1, date: "" });
     const [isLoading, setIsLoading] = useState(false);
     const [image, setImages] = useState([]);
     const [location, setLocation] = useState([]);
@@ -41,9 +41,9 @@ export const EventEditForm = () => {
         // userId : parseInt(sessionStorage.getItem("app_user_id")),
         name: eventState.name,
         image: eventState.image,
-        statement: eventState.statement,
+        description: eventState.description,
         date: eventState.date,
-        locationId: 1
+        locationId: eventState.locationId
       };
       console.log(editedEvent)
       update(editedEvent)
@@ -70,12 +70,12 @@ export const EventEditForm = () => {
   
     return (
       <>
-        <h3 className="animal_form_title">Edit animal card</h3>
+        <h3 className="animal_form_title">Edit event card</h3>
         <form>
           <fieldset className="edit_animal_fieldset">
             <div className="formgrid">
               <div className="name">
-              <label className="animal-name" htmlFor="name">Animal name  </label> <input
+              <label className="animal-name" htmlFor="name">Event name  </label> <input
                 type="text"
                 required
                 className="form-control"
@@ -96,18 +96,18 @@ export const EventEditForm = () => {
                 </select>
               </div>
               <div className="knowledge">
-                <label className="animal-knowledge" htmlFor="statement"> Desired Knowledge  </label>
+                <label className="animal-knowledge" htmlFor="description"> What is this event about? </label>
                 <input
                   type="text"
                   required
                   className="form-control"
                   onChange={handleFieldChange}
-                  id="statement"
-                  value={eventState.statement}
+                  id="description"
+                  value={eventState.description}
                 />
               </div>
               <div className="knowledge">
-                <label className="animal-knowledge" htmlFor="date"> Desired Knowledge  </label>
+                <label className="animal-knowledge" htmlFor="date"> date </label>
                 <input
                   type="date"
                   required

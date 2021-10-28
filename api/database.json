@@ -55,7 +55,7 @@
     {
       "id": 3,
       "userId": 1,
-      "name": "Sloth",
+      "name": "- Sloth -",
       "image": "sloth.jpeg",
       "knowledge": "How fast can a sloth move?",
       "locationId": 1
@@ -63,74 +63,74 @@
     {
       "id": 4,
       "userId": 1,
-      "name": "Elephant",
+      "name": "- Elephant -",
       "image": "elephant.jpeg",
       "knowledge": "How long does an elephant live?",
       "locationId": 1
     },
     {
-      "name": "Flamingo",
+      "id": 5,
       "userId": 1,
+      "name": " - Flamingo -",
       "image": "flamingo.jpeg",
       "knowledge": "How mnay different colors can flamingos be?",
-      "locationId": 3,
-      "id": 5
+      "locationId": 1
     },
     {
-      "name": "Cheetah",
+      "id": 6,
       "userId": 1,
+      "name": "- Cheetah -",
       "image": "cheetah.jpeg",
       "knowledge": "How fast can a cheetah run?",
-      "locationId": 3,
-      "id": 6
+      "locationId": 1
     },
     {
-      "name": "Stingray",
+      "id": 7,
       "userId": 1,
+      "name": "- Stingray -",
       "image": "stingray.jpeg",
       "knowledge": "Are stingrays dangerous?",
-      "locationId": 3,
-      "id": 7
+      "locationId": 1
     },
     {
-      "name": "Zebra",
+      "id": 10,
       "userId": 1,
+      "name": "- Zebra -",
       "image": "zebra.jpeg",
       "knowledge": "Are zebras nice animals?",
-      "locationId": 2,
-      "id": 10
+      "locationId": 1
     },
     {
-      "name": "Parrot",
+      "id": 11,
       "userId": 1,
+      "name": "- Parrot -",
       "image": "parrot.jpeg",
       "knowledge": "Can you talk to parrots?",
-      "locationId": 1,
-      "id": 11
+      "locationId": 1
     },
     {
-      "name": "Kangaroo",
+      "id": 12,
       "userId": 1,
+      "name": "- Kangaroo -",
       "image": "kangaroo.jpeg",
       "knowledge": "How high can a kangaroo jump?",
-      "locationId": 3,
-      "id": 12
+      "locationId": 1
     },
     {
-      "name": "Shark",
+      "id": 13,
       "userId": 1,
+      "name": "- Shark -",
       "image": "dottedshark.jpeg",
       "knowledge": "How fast can a shark swim?",
-      "locationId": 3,
-      "id": 13
+      "locationId": 1
     },
     {
-      "name": "Lion",
+      "id": 14,
       "userId": 1,
+      "name": "- Lion -",
       "image": "lion.jpeg",
       "knowledge": "How big is a lion?",
-      "locationId": 3,
-      "id": 14
+      "locationId": 1
     }
   ],
   "locations": [
@@ -293,6 +293,31 @@
       "id": 26,
       "name": "josh and ryan petting goats",
       "address": "ryan-petting-goat-with-dad.jpeg"
+    },
+    {
+      "id": 27,
+      "name": "event - chiese lantern festival",
+      "address": "lanternfestival.jpeg"
+    },
+    {
+      "id": 28,
+      "name": "event - feed kangaroos",
+      "address": "kangaroo-feeding.jpeg"
+    },
+    {
+      "id": 29,
+      "name": "event - petting zoo",
+      "address": "petting-zoo.jpeg"
+    },
+    {
+      "id": 30,
+      "name": "event - sunset at the zoo",
+      "address": "sunsetatzoo.jpeg"
+    },
+    {
+      "id": 31,
+      "name": "event - trick or treat",
+      "address": "booatthezoo.jpeg"
     }
   ],
   "reviews": [
@@ -349,16 +374,50 @@
       "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
       "timestamp": 1633564664154,
       "locationId": 1
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "name": "Katie Johns",
+      "image": "ryan-and-colton.jpeg",
+      "statement": "Ryana nd colton at the zoo petting an animal",
+      "timestamp": 1635446805638,
+      "locationId": 1
+    },
+    {
+      "name": "lkfg",
+      "userId": 1,
+      "statement": "jes",
+      "timestamp": 1635446877084,
+      "image": "ryan-on-cows.jpeg",
+      "locationId": 3,
+      "id": 8
     }
   ],
   "events": [
     {
-      "id": 1,
+      "id": 3,
+      "name": "Boo at the Zoo",
       "image": "booatthezoo.jpeg",
-      "name": "trick or treat",
-      "locationId": 1,
-      "description": "dress up and come trick or treat at the zoo",
-      "date": "10/31/2021"
+      "description": "Trick or treat ",
+      "date": "2021-10-31",
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Petting Zoo",
+      "image": "petting-zoo.jpeg",
+      "description": "petting zoo",
+      "date": "2021-10-01",
+      "locationId": "3"
+    },
+    {
+      "id": 5,
+      "name": "Lantern Festival",
+      "image": "lanternfestival.jpeg",
+      "description": "Lantern festival",
+      "date": "2021-10-18",
+      "locationId": 1
     }
   ]
 }
