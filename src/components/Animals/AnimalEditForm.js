@@ -43,7 +43,7 @@ export const AnimalEditForm = () => {
       name: animal.name,
       image: animal.image,
       knowledge: animal.knowledge,
-      locationId: 1
+      locationId: animal.locationId
     };
     console.log(editedAnimal)
     update(editedAnimal)

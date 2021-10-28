@@ -12,7 +12,7 @@ export const EventForm = () => {
         name: "",
         // parse the Int from app_user_id
         image:"",
-        description:"",
+        statement:"",
         date: "",
         locationId: 0
     });
@@ -66,15 +66,15 @@ export const EventForm = () => {
                     <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Event name" value={event.name} />
                 </div>
             </fieldset>
-            <fieldset className="description_fieldset">
+            <fieldset className="statement_fieldset">
             <div className="form-group">
-					<label htmlFor="description">What is this event? </label>
-					<input type="text" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="what is this event about?" value={event.description} />
+					<label htmlFor="statement">What is this event? </label>
+					<input type="text" id="statement" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="what is this event about?" value={event.statement} />
 				</div>
             </fieldset>
             <fieldset className="date_fieldset">
             <div className="form-group">
-					<label htmlFor="description">When is the event? </label>
+					<label htmlFor="date">When is the event? </label>
 					<input type="date" id="date" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="what is the event?" value={event.date} />
 				</div>
             </fieldset>
