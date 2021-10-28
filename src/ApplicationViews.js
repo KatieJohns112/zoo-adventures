@@ -10,6 +10,7 @@ import { ReviewForm } from "./components/Reviews/NewReviewForm"
 import { ReviewEditForm } from "./components/Reviews/ReviewEditForm"
 import { EventList } from "./components/Events/EventList"
 import { EventForm } from "./components/Events/EventForm"
+import { EventEditForm } from "./components/Events/EditEvent"
 
 export const ApplicationViews = () => {
     return (
@@ -53,6 +54,10 @@ export const ApplicationViews = () => {
 
             <Route exact path="/events/create">
               <EventForm />
+            </Route>
+
+            <Route path="/events/:eventId(\d+)/edit">
+              <EventEditForm /> 
             </Route>
         </>
     )

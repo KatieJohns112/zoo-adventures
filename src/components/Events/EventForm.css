@@ -1,0 +1,90 @@
+/* CSS for animal form */
+
+.name_event_fieldset {
+    display: flex;
+    justify-content: left;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+}
+
+.description_fieldset {
+    display: flex;
+    justify-content: left;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+}
+
+.date_fieldset {
+    display: flex;
+    justify-content: left;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+}
+
+.event_form_title {
+    color: tan;
+    font-size: 1cm;
+}
+
+.event_form_title {
+    font-size: 1.2cm;
+    font-family: Architects Daughter, sans-serif;
+    border-style: solid;
+    border-left-color: white;
+    border-right-color: tan;
+    border-top-color: grey;
+    border-bottom-color: rgb(141, 105, 57);
+    border-width: .3cm;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.save_event_button {
+    background-color: grey;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: Architects Daughter, sans-serif;
+    font-size: .4cm;
+    margin-left: 45%;
+    margin-top: 1%;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 15%;
+    font-weight: bold;
+}
+
+.image_fieldset {
+    display: flex;
+    justify-content: left;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan; 
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+}
+
+.event_fieldset {
+    display: flex;
+    justify-content: left;
+    margin-left:30%;
+    margin-right:30%;
+    color:tan; 
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: .5cm;
+}

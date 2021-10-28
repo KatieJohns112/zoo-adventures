@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import { addEvent } from "./EventManager";
 import { getAllLocations } from "../Locations/LocationManager";
 import { getAllImages } from "../../ImageManager";
+import "./EventForm.css"
 
 
 export const EventForm = () => {
