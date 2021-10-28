@@ -74,7 +74,7 @@
       "name": " - Flamingo -",
       "image": "flamingo.jpeg",
       "knowledge": "How mnay different colors can flamingos be?",
-      "locationId": 1
+      "locationId": "3"
     },
     {
       "id": 6,
@@ -131,6 +131,14 @@
       "image": "lion.jpeg",
       "knowledge": "How big is a lion?",
       "locationId": 1
+    },
+    {
+      "id": 15,
+      "userId": 1,
+      "name": "- Penguin -",
+      "image": "penguin.jpeg",
+      "knowledge": "Can penguins fly?",
+      "locationId": 3
     }
   ],
   "locations": [
@@ -266,32 +274,32 @@
     },
     {
       "id": 21,
-      "name": "katie and ryan at the zoo",
+      "name": "review - katie and ryan at the zoo",
       "address": "katie-and-ryan.jpeg"
     },
     {
       "id": 22,
-      "name": "ryan and colton at the zoo",
+      "name": "review - ryan and colton at the zoo",
       "address": "ryan-and-colton.jpeg"
     },
     {
       "id": 23,
-      "name": "ryan petting the goat",
+      "name": "review - ryan petting the goat",
       "address": "ryan-and-goat.jpeg"
     },
     {
       "id": 24,
-      "name": "ryan at the zoo",
+      "name": "review - ryan at the zoo",
       "address": "ryan-at-the-zoo.jpeg"
     },
     {
       "id": 25,
-      "name": "ryan riding the fake cows",
+      "name": "review - ryan riding the fake cows",
       "address": "ryan-on-cows.jpeg"
     },
     {
       "id": 26,
-      "name": "josh and ryan petting goats",
+      "name": "review - josh and ryan petting goats",
       "address": "ryan-petting-goat-with-dad.jpeg"
     },
     {
@@ -374,50 +382,24 @@
       "statement": "Such a great zoo! Little Ryan loved going to the petting zoo and seeing all the big animals.",
       "timestamp": 1633564664154,
       "locationId": 1
-    },
-    {
-      "id": 7,
-      "userId": 1,
-      "name": "Katie Johns",
-      "image": "ryan-and-colton.jpeg",
-      "statement": "Ryana nd colton at the zoo petting an animal",
-      "timestamp": 1635446805638,
-      "locationId": 1
-    },
-    {
-      "name": "lkfg",
-      "userId": 1,
-      "statement": "jes",
-      "timestamp": 1635446877084,
-      "image": "ryan-on-cows.jpeg",
-      "locationId": 3,
-      "id": 8
     }
   ],
   "events": [
     {
-      "id": 3,
-      "name": "Boo at the Zoo",
-      "image": "booatthezoo.jpeg",
-      "description": "Trick or treat ",
-      "date": "2021-10-31",
-      "locationId": 1
-    },
-    {
       "id": 4,
-      "name": "Petting Zoo",
+      "name": "Petting Zoos",
       "image": "petting-zoo.jpeg",
-      "description": "petting zoo",
-      "date": "2021-10-01",
-      "locationId": "3"
+      "statement": "Petting Zoo",
+      "date": "2021-10-18",
+      "locationId": 3
     },
     {
       "id": 5,
-      "name": "Lantern Festival",
-      "image": "lanternfestival.jpeg",
-      "description": "Lantern festival",
-      "date": "2021-10-18",
-      "locationId": 1
+      "name": "Sunset at Zoo",
+      "image": "sunsetatzoo.jpeg",
+      "statement": "Sunset at Zoo",
+      "date": "2021-10-20",
+      "locationId": 3
     }
   ]
 }

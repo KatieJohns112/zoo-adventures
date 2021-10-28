@@ -9,7 +9,7 @@ import { getAllLocations } from "../Locations/LocationManager"
 
 export const EventEditForm = () => {
     // animal is the non changing state of the data | setAnimal is returned after the state has changed
-    const [eventState, setEvent] = useState({ name: "", image: "", description: "", locationId: 1, date: "" });
+    const [eventState, setEvent] = useState({ name: "", image: "", statement: "", locationId: 1, date: "" });
     const [isLoading, setIsLoading] = useState(false);
     const [image, setImages] = useState([]);
     const [location, setLocation] = useState([]);
@@ -41,7 +41,7 @@ export const EventEditForm = () => {
         // userId : parseInt(sessionStorage.getItem("app_user_id")),
         name: eventState.name,
         image: eventState.image,
-        description: eventState.description,
+        statement: eventState.statement,
         date: eventState.date,
         locationId: eventState.locationId
       };
@@ -70,7 +70,7 @@ export const EventEditForm = () => {
   
     return (
       <>
-        <h3 className="animal_form_title">Edit event card</h3>
+        <h3 className="animal_form_title">Edit Event card</h3>
         <form>
           <fieldset className="edit_animal_fieldset">
             <div className="formgrid">
@@ -96,18 +96,18 @@ export const EventEditForm = () => {
                 </select>
               </div>
               <div className="knowledge">
-                <label className="animal-knowledge" htmlFor="description"> What is this event about? </label>
+                <label className="animal-knowledge" htmlFor="statement"> What is this event?  </label>
                 <input
                   type="text"
                   required
                   className="form-control"
                   onChange={handleFieldChange}
-                  id="description"
-                  value={eventState.description}
+                  id="statement"
+                  value={eventState.statement}
                 />
               </div>
               <div className="knowledge">
-                <label className="animal-knowledge" htmlFor="date"> date </label>
+                <label className="animal-knowledge" htmlFor="date"> Date </label>
                 <input
                   type="date"
                   required
@@ -118,7 +118,7 @@ export const EventEditForm = () => {
                 />
               </div>
               <div className="location">
-                <label className="animal-location" htmlFor="location">Location ID  </label>
+                <label className="animal-location" htmlFor="location">Zoo </label>
                 <select value={eventState.locationId} name="locationId" id="locationId" onChange={handleFieldChange} className="form-control" >
                   <option value="0">Select a location  </option>
                   {location.map(l => (
