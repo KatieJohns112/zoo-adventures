@@ -13,7 +13,7 @@ export const LocationCard = ({ location, handleDeleteLocation }) => {
           <p>Address: {location.address}</p>
           <p>Operation Hours: {location.hours}</p>
           <p>Price Range: {location.price}</p>
-          <button type="button" onClick={() => handleDeleteLocation(location.id)}>Remove from my list</button>
+          {/* <button type="button" onClick={() => handleDeleteLocation(location.id)}>Remove from my list</button> */}
         </div>
       </div>
       </>

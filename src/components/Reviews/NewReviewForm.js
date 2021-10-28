@@ -63,14 +63,14 @@ export const ReviewForm = () => {
             <fieldset className="name_fieldset_review">
                 <div className="form-group">
                     <label htmlFor="name">Reviewe name  </label>
-                    <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Animal name" value={review.name} />
+                    <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Reviewer name" value={review.name} />
                 </div>
             </fieldset>
          
             <fieldset className="statement_fieldset">
             <div className="form-group">
 					<label htmlFor="statement">What do you want to learn about this animal?  </label>
-					<input type="text" id="statement" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="what do you want to know?" value={review.statement} />
+					<input type="text" id="statement" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="how was your experience?" value={review.statement} />
 				</div>
             </fieldset>
             <fieldset className="review_location_fieldset">
